@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99ccff"
+    tools:context=".MainActivity">
+
+
+    // implementacja obrazu
+    <ImageView
+        android:id="@+id/silownia"
+        android:layout_width="423dp"
+        android:layout_height="385dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/silownia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    // napis
+    <TextView
+        android:id="@+id/tvSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="8dp"
+        android:text="Trening czasowy"
+        android:textColor="#FFF"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/silownia" />
+
+
+    // przycisk ktorzy przechodzi do activit_stop_watch
+    <Button
+        android:id="@+id/btnget"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="8dp"
+        android:text="Zaczynamy"
+        android:textAllCaps="true"
+        android:textColor="#FFF"
+        android:background="@drawable/bgbutton"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4985"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginRight="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
